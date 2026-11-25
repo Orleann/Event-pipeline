@@ -11,11 +11,15 @@ add_library(Event-pipeline_core
         src/main.cpp
         include/pipeline/event.h
         include/pipeline/thread_safe_queue.h
+        include/pipeline/storage_strategy.h
+        include/pipeline/BinaryFileStorage.h
 )
 target_include_directories(Event-pipeline_core PUBLIC include)
 
 add_executable(Event-pipeline_server src/main.cpp
         include/pipeline/event.h
         include/pipeline/thread_safe_queue.h
+        include/pipeline/storage_strategy.h
+        include/pipeline/BinaryFileStorage.h
 )
 target_link_libraries(Event-pipeline_server PRIVATE Event-pipeline_core)

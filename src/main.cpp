@@ -6,6 +6,7 @@
 #include <thread>
 #include "pipeline/event.h"
 #include "pipeline/thread_safe_queue.h"
+#include "pipeline/storage_strategy.h"
 
 
 int main() {
