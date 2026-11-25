@@ -24,6 +24,6 @@ namespace pipeline {
         Payload data;
 
         Event(uint64_t id, Severity severity, Payload data, std::string source) :
-            id(id), severity(severity), timestamp(std::chrono::steady_clock::now()), source(std::move(source), data(std::move(data))) {}
+            id(id), severity(severity), timestamp(std::chrono::steady_clock::now()), source(std::move(source)), data(std::move(data)) {}
     };
 }
